@@ -16,6 +16,7 @@ async function main() {
   const state = parseState(core.getInput('state', { required: true }));
   const auto_inactive = core.getInput('auto_inactive', { required: true }) === 'true';
   const description = core.getInput('description');
+  const environment = core.getInput('environment');
   const environment_url = core.getInput('environment_url');
   const log_url = core.getInput('log_url');
 
@@ -31,6 +32,9 @@ async function main() {
 
   if (description) {
     req['description'] = description;
+  }
+  if (environment) {
+    req['environment'] = environment;
   }
   if (environment_url) {
     req['environment_url'] = environment_url;
