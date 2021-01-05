@@ -66,7 +66,7 @@ input parameters. Both `ant-man` and `flash` previews are enabled.
   the "deployment" event.
 * `auto_inactive`: defaults to `true`
 * `description`
-* `environment_url`
+* `env_url`
 * `log_url`
 
 ### Outputs
