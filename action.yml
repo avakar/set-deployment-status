@@ -32,6 +32,14 @@ inputs:
     description: |
       The full URL of the deployment's output.
     default: ''
+  owner:
+    description: |
+      Repository owner
+    default: ''
+  repo:
+    description: |
+      Repository name
+    default: ''
 
 outputs:
   deployment_status_id:
