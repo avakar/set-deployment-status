@@ -19,8 +19,9 @@ async function main() {
   const environment = core.getInput('environment');
   const environment_url = core.getInput('environment_url');
   const log_url = core.getInput('log_url');
+  const owner = core.getInput('owner') || context.repo.owner;
+  const repo = core.getInput('repo') || context.repo.repo;
 
-  const { owner, repo } = context.repo;
   const req = {
     owner,
     repo,

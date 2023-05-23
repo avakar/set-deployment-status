@@ -68,6 +68,8 @@ input parameters. Both `ant-man` and `flash` previews are enabled.
 * `description`
 * `environment_url`
 * `log_url`
+* `owner`: defaults to the current repository's owner
+* `repo`: defaults to the current repository
 
 ### Outputs
 
